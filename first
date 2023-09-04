@@ -1,0 +1,96 @@
+<span>Hello</span>    -- without enter 
+
+static - source - public --> better to create css file in another folder with one of these names
+
+1) <span style = "font-style : italic;">Hypertext Language</span> ---> go to CSS (каскадные таблицы стилей)
+2) <span> Hypertexte Language </span> 
+IN HEAD: 
+<style> 
+span {
+font-style : italic
+}
+</style>
+3) IN HTML :
+<span> Hypertexte Language </span> 
+<link rel = "stylesheet" href = "style.css">          -- connect css file
+IN CSS:
+span {
+font-style : italic;
+background-color: black;
+color: white;
+}
+
+---------------------------------
+To use different styles and etc. in TAG SPAN: 
+<span></span>
+<span class = "bold-text"></span>
+GO TO CSS:
+span{
+font-style: italic;
+}
+.bold-text{
+font-weight: bold;
+}
+
+-------------------------------------
+TAG <a></a>
+1) <a href = "" > HTML </a>                                       // if you dont want to add link -> write   href = "#" (заглушка)
+2) <a href = "https://youtube.com" target = "_blank" > HTML </a>     // to open page in new window
+
+--------------------------------------
+<ol>
+<li>chess</li>
+<li>volley</li>
+<li>STEM
+<ol>
+<li>bio</li>
+<li>math</li>
+<li>astrophysics</li>
+</ol>
+</li>
+<li>English</li>
+</ol>
+
+GO TO CSS:
+ol{
+list-style: lower-latin;
+}
+
+--------------------------------------------
+ADD IMAGES
+
+<img src= "url adress of pic" alt = "Picture from Wikipedia" >    // alt --> if pic hasn't loaded this text will show up
+
+--------------------------------------------
+<p>First</p>
+<p>Second</p>
+<p>Third</p>
+
+GO TO CSS:
+
+*{                      // to all elements 
+margin: 0;
+}  
+
+p{
+font-size: 24px;
+background-color : green;
+margin: 30px;            // отступы от краев со всех сторон
+padding: 3px;            // отступы от внутренней стороны блока 
+}
+
+---------------------------------
+<div class = "conteiner">
+<img src = "">
+<p>First</p>
+<p>Second</p>
+<p>Third</p>
+</div>
+
+GO TO CSS:
+.conteiner{
+display: inline-block;
+//height: 100px;
+text-align: center;
+background-color: black;
+}
